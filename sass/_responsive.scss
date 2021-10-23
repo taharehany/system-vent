@@ -1,0 +1,200 @@
+@media screen and (max-width: 1199px) {
+    .about-page {
+        .about-page-content {
+            grid-template-columns: 350px auto;
+
+            .about-page-text {
+                padding: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        .navbar-light.navbar {
+            .navbar-nav {
+                padding-top: 25px;
+                align-items: flex-start;
+            }
+        }
+
+        .hamburger-menu {
+            display: inline-block;
+        }
+    }
+
+    section.about {
+        .about-image {
+            max-height: 400px;
+            min-height: 250px;
+        }
+
+        .about-text {
+            margin-bottom: 25px;
+
+            .part {
+                padding-right: 0;
+
+                p {
+                    -webkit-line-clamp: 6;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    section.contact-page .contact-form {
+        padding: 20px;
+    }
+    section.contact-page .contact-form {
+        margin-right: 0;
+        margin-bottom: 25px
+    }
+    section.contact-page .info {
+        height: auto;
+        .info-content {
+            padding: 25px;
+        }
+    }
+    footer {
+        .footer-content {
+            .footer-box {
+                margin-bottom: 20px;
+
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .about-page {
+        .about-page-content {
+            grid-template-columns: none;
+
+            .about-page-text {
+                padding: 25px;
+            }
+        }
+    }
+
+    .works-page .works-page-content {
+        display: block;
+    }
+
+    html[dir=rtl] {
+        section.contact-page .contact-form {
+            margin-left: 0;
+        }
+        section.contact-page .info .info-content {
+            padding: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact-page {
+        .info-area {
+            .info-box {
+                margin-bottom: 25px;
+            }
+        }
+        .form-area {
+            padding: 25px;
+        }
+    }
+    section.main-slider .swiper .swiper-slide .subtitle h2 {
+        font-size: 26px;
+    }
+    header {
+        .side-widget {
+            width: 75vw;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+    section.contact .contact-content .form-area .form-control {
+        font-size: 18px;
+    }
+    section.contact .contact-content .form-area .form-group .btn { 
+        font-size: 18px;
+    }
+    section.contact .contact-content .info-box .text p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title {
+        display: block;
+        margin-bottom: 45px;
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        span {
+            font-size: 14px;
+            display: block;
+        }
+    }
+    .alert.alert-warning {
+        padding: 10px 35px;
+        .close {
+       
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+    .works-page .works-page-content .works-page-text {
+        padding: 15px;
+    }
+    .works-page-text {
+        .title {
+            margin-bottom: 15px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        .navbar-light.navbar {
+            .navbar-brand {
+                img {
+                    max-width: 110px;
+                }
+            }
+        }
+    }
+
+    footer {
+        .footer-content {
+            .footer-box {
+                .social-media {
+                    ul {
+                        li {
+                            a {
+                                i {
+                                    height: 30px;
+                                    width: 30px;
+                                    line-height: 30px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

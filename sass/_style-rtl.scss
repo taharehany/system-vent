@@ -1,0 +1,112 @@
+/** rtl styles **/
+html[dir=rtl] {
+    body {
+        font-family: "Tajawal", sans-serif;
+    }
+    .title span::after {
+        right: 0;
+        left: auto;
+    }
+    header {
+        .hamburger-menu {
+            margin-left: 10px;
+        }
+        .side-widget {
+            left: auto;
+            right: -100%;
+        }
+        .side-widget.active {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    .swiper{
+        direction: ltr;
+        .swiper-slide {
+            * {
+                direction: rtl;
+            }
+        }
+    }
+    .main-slider {
+        direction: ltr;
+        * {
+            direction: ltr !important;
+        }
+    }
+    section.contact-page .contact-form {
+        margin-left: -100px;
+        margin-right:0;
+    }
+    section.contact-page .info .info-content {
+        padding: 0 100px 0  20px;
+    }
+    section.contact-page .info .info-content .box p {
+        padding-right: 45px;
+        padding-left: 0;
+        i {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    section.about .about-text .part {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+
+    .alert.alert-warning {
+        .close {
+            right: auto;
+            left: 10px;
+        }
+
+        &.alert-dismissible {
+            padding-right: 15px;
+            padding-left: 3rem;
+        }
+    }
+    .pagination-part .pagination .page-link {
+        i {
+            @include transform(rotate(180deg))
+        }
+    }
+
+    footer {
+        .footer-content {
+            .footer-box {
+                .contact {
+                    ul {
+                        li {
+                            padding-right: 40px;
+                            padding-left: 0;
+
+                            i {
+                                right: 0;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main,
+            .services {
+                ul {
+                    li {
+                        padding-right: 20px;
+
+                        &::after {
+                            right: 0;
+                            left: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/** rtl styles **/

@@ -1,0 +1,95 @@
+extends index
+
+block title_block
+    title system vent | contact
+
+block index_block
+    // broadcrumb part
+    section(class="broadcrumb" style="background-image: url(../images/slider/slider-1.jpg);")
+        div(class="container")
+            div(class="broad-title")
+                h2 contact Us
+    // broadcrumb part
+
+    //contact page
+    section(class="contact-page")
+      div(class="container")
+         div(class="row align-items-center")
+            div(class="col-md-12 col-lg-6")
+               div(class="contact-form")
+                  h3 Get In Touch
+                  form(action="send.php", method="post")
+                     div(class="row align-items-center")
+                        div(class="col-sm-12 col-md-6 col-xs-6")
+                           div(class="form-group")
+                              input(name="name", type="text", class="form-control", required="", placeholder="Name")
+                        div(class="col-sm-12 col-md-6 col-xs-6")
+                           div(class="form-group")
+                              input(name="company", type="text", class="form-control", required="", placeholder="Company Name")
+                        div(class="col-sm-12 col-md-12 col-xs-12")
+                           div(class="form-group")
+                              input(name="phone", type="tel", class="form-control", placeholder="Phone")
+                        div(class="col-sm-12 col-md-12 col-xs-12")
+                           div(class="form-group")
+                              input(name="email", type="email", class="form-control", required="", placeholder="E-mail address")
+                        div(class="col-sm-12 col-xs-12")
+                           div(class="form-group")
+                              textarea(name="message", class="form-control", rows="6", placeholder="Message")
+                        div(class="col-sm-12 col-xs-12")
+                           div(class="form-group")
+                              button(type="submit", class="btn btn-color btn-lg") Submit
+            div(class="col-md-12 col-lg-6")
+               div(class="info")
+                  div(class="info-content")
+                     h2 contact info
+                     div(class="box")
+                        p
+                           i(class="fa fa-phone")
+                           | 0572427577
+                     div(class="box")
+                        p
+                           i(class="fas fa-map-marker-alt")
+                           | Cairo : 25 st zuibair ibn al awam old cairo - Damietta : New Damietta Al Muroor St
+                     div(class="box")
+                        p
+                           i(class="fas fa-envelope-open-text")
+                           | info@systemvent-eg.com
+                     div(class="socialIcons")
+                        a(href="https://www.facebook.com/SYSTEMVENTILATIONEG")
+                           i(class="fab fa-facebook-f fa-2x")
+                        a(href="https://twitter.com/")
+                           i(class="fab fa-twitter fa-2x")
+                        a(href="https://www.linkedin.com/")
+                           i(class="fab fa-linkedin-in fa-2x")
+                        a(href="https://www.instagram.com/")
+                           i(class="fab fa-instagram fa-2x")
+    // contact page part
+
+block contact_form
+    // partners part
+    div(class="partners" style="background-image: url(../images/bgs/bg-contact.jpg);")
+        div(class="container")
+            div(class="title")
+                h2 our vindors
+                span Lorem ipsum dolor sit amet
+            .partners-content
+                div(class="swiper partners_swiper")
+                    div(class="swiper-wrapper")
+                        div(class="swiper-slide")
+                            .single_item
+                                .inner
+                                    img(src="../images/partners/01.png" class="img-fluid" alt="")
+                        div(class="swiper-slide")
+                            .single_item
+                                .inner
+                                    img(src="../images/partners/02.png" class="img-fluid" alt="")
+                        div(class="swiper-slide")
+                            .single_item
+                                .inner
+                                    img(src="../images/partners/03.png" class="img-fluid" alt="")
+                        div(class="swiper-slide")
+                            .single_item
+                                .inner
+                                    img(src="../images/partners/04.png" class="img-fluid" alt="")
+                    div(class="swiper-pagination")
+    // partners part

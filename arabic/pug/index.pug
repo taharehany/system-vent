@@ -1,0 +1,272 @@
+doctype 
+html(lang="ar" dir="rtl")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="shortcut icon" href="../images/favicon.png")
+        block title_block
+            title system vent
+        include includes/head.pug
+    body
+        .main-wrapper
+            include includes/header.pug
+            block index_block
+                // slider part
+                section(class="main-slider")
+                    div(style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper main_swiper")
+                        div(class="swiper-wrapper")
+                            div(class="swiper-slide" style="background-image: url(../images/slider/slider-1.jpg);")
+                                div(class="container")
+                                    div(class="subtitle" data-swiper-parallax="-1000") 
+                                        h2 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    div(class="text" data-swiper-parallax="-800")
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                            | dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                                            | laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                                            | Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                                            | Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                                            | ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                            | tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                                    .slider-btn
+                                        a(href="track.html")
+                                            a(href="about.html" class="btn btn-success") know more
+                            div(class="swiper-slide" style="background-image: url(../images/slider/slider-2.jpg);")
+                                div(class="container")
+                                    div(class="subtitle" data-swiper-parallax="-1000") 
+                                        h2 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                    div(class="text" data-swiper-parallax="-800")
+                                        p
+                                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                            | dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                                            | laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                                            | Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                                            | Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                                            | ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                            | tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                                    .slider-btn
+                                        a(href="track.html")
+                                            a(href="about.html" class="btn btn-success") know more
+                        div(class="swiper-button-next")
+                        div(class="swiper-button-prev")
+                        div(class="swiper-pagination")
+                // slider part
+
+                // about part
+                section(class="about")
+                    div(class="container")
+                        div(class="row")
+                            div(class="col-lg-6")
+                                div(class="about-text")
+                                    div(class="title")
+                                        h2 about us
+                                        span Know us first
+                                    .part
+                                        p Al Andalus Trading Company was established in 2003 in the Syrian Arab Republic to meet the needs of industry and manufacturers and provide them with the best products for the finest international brands. Al Andalus Trading Company is specialized in importing and supplying products (electric motors, speed reducers, dampers, gear boxes, sawmills, vibrators) from the best Turkish and Chinese factories to reach the highest efficiency in all kinds of heavy and light industries. The company provides its services in the Arab Republic of Egypt through its integrated services in Turkey and China to secure applications in accordance with the largest global technologies Andalus Trading Company is characterized by accuracy and perfection in its work and in the receipt and delivery of orders from and to factories and concerned parties. The marketing and service team of the company is highly qualified and always strives to provide the best services with the latest technologies and systems.
+                                    .about-btn
+                                        a(href="about.html" class="hvr-sweep-to-top btn btn-success") read more
+                            div(class="col-lg-6")
+                                div(class="row")
+                                    div(class="col-lg-6")
+                                        div(class="about-box")
+                                            img(src="../images/svgs/mission-about.svg" class="img-fluid" alt="")
+                                            div(class="text")
+                                                h3 mission
+                                                p The company is specialized in importing and supplying products (electric motors, speed reducers, dampers, gear boxes, sawmills, vibrators) from the best factories.
+                                    div(class="col-lg-6")
+                                        div(class="about-box")
+                                            img(src="../images/svgs/vision-about.svg" class="img-fluid" alt="")
+                                            div(class="text")
+                                                h3 vision
+                                                p The company obtained the power of attorney from the largest brands to be the only distributor in the Arab Republic of Egypt
+                // about part
+
+                // our works
+                section(class="our-works")
+                    div(class="container")
+                        div(class="title")
+                            h2 our works
+                            span Know us first
+                        div(class="swiper works_swiper")
+                            div(class="swiper-wrapper")
+                                div(class="swiper-slide")
+                                    div(class="row")
+                                        div(class="col-lg-6")
+                                            div(class="our-works-image")
+                                                img(src="../images/why1.png" class="img-fluid" alt="")
+                                        div(class="col-lg-6")
+                                            div(class="our-works-text")
+                                                h2 this is title
+                                                p this is description is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                div(class="swiper-slide")
+                                    div(class="row")
+                                        div(class="col-lg-6")
+                                            div(class="our-works-image")
+                                                img(src="../images/why1.png" class="img-fluid" alt="")
+                                        div(class="col-lg-6")
+                                            div(class="our-works-text")
+                                                h2 this is title
+                                                p this is description is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                div(class="swiper-slide")
+                                    div(class="row")
+                                        div(class="col-lg-6")
+                                            div(class="our-works-image")
+                                                img(src="../images/why1.png" class="img-fluid" alt="")
+                                        div(class="col-lg-6")
+                                            div(class="our-works-text")
+                                                h2 this is title
+                                                p this is description is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            // Add Pagination
+                            div(class="swiper-pagination")
+                // our works
+
+                // video part
+                section(class="video" style="background: url(../images/bgs/bg-img.jpg) center center fixed;")
+                    div(class="container")
+                        a(data-fancybox="" href="https://youtu.be/lM02vNMRRB0" class="video-btn")
+                            i(class="far fa-play-circle video-play")
+                // video part
+
+                // products part
+                section(class="products")
+                    div(class="container")
+                        div(class="title")
+                            h2 our products
+                            span Lorem ipsum dolor
+                        div(class="products-content")
+                            div(class="row")
+                                div(class="col-md-4 col-lg-4")
+                                    div(class="product-box wow fadeInUp" data-wow-duration="1s")
+                                        div(class="image")
+                                            img(src="../images/products/01.png" class="img-fluid" alt="")
+                                        div(class="details")
+                                            h3 Lorem ipsum dolor sit
+                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum quos, pariatur minus unde eum quidem velit mollitia vel laboriosam eius rem laborum soluta aut rerum ad odio facere? Modi.
+                                            .details-btn
+                                                a(href="single-product.html" class="hvr-sweep-to-top btn btn-success") more details
+                                div(class="col-md-4 col-lg-4")
+                                    div(class="product-box wow fadeInUp" data-wow-duration="1s")
+                                        div(class="image")
+                                            img(src="../images/products/02.png" class="img-fluid" alt="")
+                                        div(class="details")
+                                            h3 Lorem ipsum dolor sit
+                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum quos, pariatur minus unde eum quidem velit mollitia vel laboriosam eius rem laborum soluta aut rerum ad odio facere? Modi.
+                                            .details-btn
+                                                a(href="single-product.html" class="hvr-sweep-to-top btn btn-success") more details
+                                div(class="col-md-4 col-lg-4")
+                                    div(class="product-box wow fadeInUp" data-wow-duration="1s")
+                                        div(class="image")
+                                            img(src="../images/products/03.png" class="img-fluid" alt="")
+                                        div(class="details")
+                                            h3 Lorem ipsum dolor sit
+                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum quos, pariatur minus unde eum quidem velit mollitia vel laboriosam eius rem laborum soluta aut rerum ad odio facere? Modi.
+                                            .details-btn
+                                                a(href="single-product.html" class="hvr-sweep-to-top btn btn-success") more details
+                                div(class="col-md-4 col-lg-4")
+                                    div(class="product-box wow fadeInUp" data-wow-duration="1s")
+                                        div(class="image")
+                                            img(src="../images/products/02.png" class="img-fluid" alt="")
+                                        div(class="details")
+                                            h3 Lorem ipsum dolor sit
+                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum quos, pariatur minus unde eum quidem velit mollitia vel laboriosam eius rem laborum soluta aut rerum ad odio facere? Modi.
+                                            .details-btn
+                                                a(href="single-product.html" class="hvr-sweep-to-top btn btn-success") more details
+                                div(class="col-md-4 col-lg-4")
+                                    div(class="product-box wow fadeInUp" data-wow-duration="1s")
+                                        div(class="image")
+                                            img(src="../images/products/01.png" class="img-fluid" alt="")
+                                        div(class="details")
+                                            h3 Lorem ipsum dolor sit
+                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum quos, pariatur minus unde eum quidem velit mollitia vel laboriosam eius rem laborum soluta aut rerum ad odio facere? Modi.
+                                            .details-btn
+                                                a(href="single-product.html" class="hvr-sweep-to-top btn btn-success") more details
+                                div(class="col-md-4 col-lg-4")
+                                    div(class="product-box wow fadeInUp" data-wow-duration="1s")
+                                        div(class="image")
+                                            img(src="../images/products/03.png" class="img-fluid" alt="")
+                                        div(class="details")
+                                            h3 Lorem ipsum dolor sit
+                                            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatum quos, pariatur minus unde eum quidem velit mollitia vel laboriosam eius rem laborum soluta aut rerum ad odio facere? Modi.
+                                            .details-btn
+                                                a(href="single-product.html" class="hvr-sweep-to-top btn btn-success") more details
+                        div(class="products-btn")
+                            a(href="products.html" class="hvr-sweep-to-top btn btn-success") all products
+                // products part
+
+            block contact_form
+                // contact part
+                section(class="contact" style="background-image: url(../images/bgs/bg-contact.jpg);")
+                    div(class="container")
+                        div(class="contact-title")
+                            h2 Contact us any time
+                        div(class="contact-content")
+                            div(class="contact-box")
+                                div(class="alert bg-danger alert-warning alert-dismissible fade show" role="alert")
+                                    p You should check in on some of those fields below.
+                                    button(type="button" class="close" data-dismiss="alert" aria-label="Close")
+                                        span(aria-hidden="true") &times;
+                                div(class="form-area")
+                                    form(action="")
+                                        .row
+                                            div(class="col-lg-12")
+                                                div(class="form-group")
+                                                    input(placeholder="The Name" class="form-control" type="text" required)
+                                            div(class="col-lg-12")            
+                                                div(class="form-group")
+                                                    input(placeholder="E-mail Address" class="form-control" type="email" required)
+                                            div(class="col-lg-12")
+                                                div(class="form-group")
+                                                    textarea(rows="6" placeholder="Message" class="form-control")
+                                            div(class="col-lg-12")
+                                                div(class="form-group text-center")
+                                                    button(class="btn btn-danger hvr-sweep-to-top" type="submit") Send Now
+                                            div(class="col-lg-12")
+                                                div(class="text-center")
+                                                    p(class="successfully") Message Sent Successfully 
+                            div(class="info-box")
+                                div(class="box")
+                                    div(class="image")
+                                        img(src="../images/svgs/map.svg", alt="")
+                                    div(class="text")
+                                        p Cairo : 25 st zuibair ibn al awam old cairo - Damietta : New Damietta Al Muroor St
+                                div(class="box")
+                                    div(class="image")
+                                        img(src="../images/svgs/phone.svg", alt="")
+                                    div(class="text") 
+                                        p 01111111111 - 0100000000
+                                div(class="box")
+                                    div(class="image")
+                                        img(src="../images/svgs/mail.svg", alt="")
+                                    div(class="text") 
+                                        p Info@alandalos.com
+                    // partners part
+                    div(class="partners")
+                        div(class="container")
+                            div(class="title")
+                                h2 our vindors
+                                span Lorem ipsum dolor sit amet
+                            .partners-content
+                                div(class="swiper partners_swiper")
+                                    div(class="swiper-wrapper")
+                                        div(class="swiper-slide")
+                                            .single_item
+                                                .inner
+                                                    img(src="../images/partners/01.png" class="img-fluid" alt="")
+                                        div(class="swiper-slide")
+                                            .single_item
+                                                .inner
+                                                    img(src="../images/partners/02.png" class="img-fluid" alt="")
+                                        div(class="swiper-slide")
+                                            .single_item
+                                                .inner
+                                                    img(src="../images/partners/03.png" class="img-fluid" alt="")
+                                        div(class="swiper-slide")
+                                            .single_item
+                                                .inner
+                                                    img(src="../images/partners/04.png" class="img-fluid" alt="")
+                                    // Add Pagination
+                                    div(class="swiper-pagination")
+                    // partners part
+                // contact part
+            include includes/footer.pug
+        include includes/scripts.pug

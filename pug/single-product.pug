@@ -1,0 +1,48 @@
+extends index
+
+block title_block
+    title system vent | single product
+
+block index_block
+    // broadcrumb part
+    section(class="broadcrumb" style="background-image: url(images/slider/slider-1.jpg);")
+        div(class="container")
+            div(class="broad-title")
+                h2 single product
+                p single product details
+    // broadcrumb part
+
+    // single product page
+    section(class="single-product-page")
+        div(class="container")
+            div(class="single-product-content")
+                div(class="row")
+                    div(class="col-lg-4")
+                        div(class="product-image")
+                            img(class="img-fluid" src="images/products/01.png" alt="")
+                    div(class="col-lg-8")
+                        div(class="product-description")
+                            div(class="specifications")
+                                h4(class="specif") Specifications
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae vitae explicabo dolorum. Blanditiis, amet. Quibusdam consequuntur sunt commodi voluptas nobis! Ad necessitatibus magnam exercitationem autem repellendus repudiandae. Quo, dolor velit?
+                                table(class="table table-bordered")
+                                    tbody
+                                        tr
+                                            th(scope="row") Blauberg Ventilatoren
+                                            td Decor G
+                                        tr
+                                            th(scope="row") Air Distribution Grilles Decor
+                                            td 
+                                        tr
+                                            th(scope="row") Specifications
+                                            td Plastic gravity grilles
+                                div(class="more")
+                                    div(class="clickable")
+                                        a(class="btn btn-light hvr-sweep-to-top" href="")
+                                            i(class="fa fa-file-pdf")
+                                            | file
+                                        a(class="btn btn-light hvr-sweep-to-top" href="")
+                                            i(class="fa fa-cube")
+                                            | 3D
+            div(class="information-area")
+    // single product page
